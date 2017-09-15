@@ -11,8 +11,9 @@ var Fish = Backbone.Model.extend({
     displayInfo: false
   }, 
 
-   toggle: function() {
-      this.ocClick({displayInfo: !this.get("displayInfo")});
+   toggleDescription: function() {
+    	this.set(displayInfo : !this.get ( "displayInfo" ));
+    	
+    	this.trigger( "toggle : description", this)
     } 
-
 });
